@@ -51,7 +51,7 @@
 
 		{% if object.author == user or not user.profile.access == 'standart' %}
 		<div class="text-center">
-			<a class="btn btn-dark text-white" href="{% url 'post-update' object.id %}">Дополнить</a>
+			<a class="btn btn-dark text-white" href="{% url 'post-update' object.id %}">Редактировать</a>
 			<a class="btn btn-danger text-white" href="{% url 'post-delete' object.id %}">Удалить</a>
 		</div>
 		{% endif %}
